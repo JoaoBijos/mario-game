@@ -6,7 +6,7 @@
 
 .game-board{
     width: 100%;
-    height: 500px;
+    height: 100vh;
     border-bottom: 15px solid rgb(35,160,35);
     margin: 0 auto;
     position: relative;
@@ -35,7 +35,14 @@
     width: 300px;
     position: absolute;
     margin-top: 48px;
-    animation: clouds-animation 1s infinite linear;
+    animation: clouds-animation 6s infinite linear;
+}
+
+.clouds2{
+    width: 300px;
+    position: absolute;
+    margin-top: 260px;
+    animation: clouds-animation 8s infinite linear;
 }
 
 @keyframes pipe-animation{
@@ -79,3 +86,23 @@
         right: 100%;
     }
 }
+
+
+.title{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #bb3a3a9c;
+}
+
+.score{
+    display: flex;
+    position: relative;
+
+}
+
+
